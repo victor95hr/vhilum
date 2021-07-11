@@ -1,0 +1,80 @@
+
+
+//Variables de tonos
+$bgColor: #F5F6FA;
+$colorFont: #505050;
+$colorSeparador: #B8B3FF;
+
+
+//Fuente
+@font-face {
+    font-family: nunito;
+    src: url(../../../fonts/nunito.ttf);
+}
+
+@font-face {
+    font-family: nunitoBold;
+    src: url(../../../fonts/nunito-bold.ttf);
+}
+
+
+//Código
+
+
+/*Dispositivos moviles*/
+@media screen and (max-width: 480px){
+
+    //General
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: $bgColor;
+        font-family: nunitoBold, 'open sans';
+    }
+
+    //Cabecera
+    .cabecera {
+
+        //Vhilum
+        .container-cabecera {
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            width: 100%;
+            height: 54px;
+            padding: 20px;
+        }
+
+        //Nombre Vhilum
+        .container-vhilum {
+            min-width: max-content;
+        }
+        .container-vhilum > p {
+            font-size: 40px;
+            width: max-content;
+            color: $colorFont;
+        }
+
+        //Icono de ayuda
+        .container-icono-ayuda {
+            text-align: right;
+        }
+
+        .container-icono-ayuda > img {
+            grid-column-start: 2;
+            width: 40px;
+            opacity: 70%;
+            margin: 0 0 0 0;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 360px){
+
+}

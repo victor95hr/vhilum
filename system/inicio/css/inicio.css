@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: nunitoBold;
+  src: url(../../../fonts/nunito-bold.ttf);
+}
+@font-face {
+  font-family: nunito;
+  src: url(../../../fonts/nunito.ttf);
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-color: #F5F6FA;
+  }
+
+  .cabecera {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .cabecera .name {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 22px;
+    font-family: nunitoBold;
+    color: #505050;
+  }
+  .cabecera .bg-icono-perfil {
+    width: 46px;
+    height: 46px;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    margin: 24px 22px 0 auto;
+    box-shadow: 0 3px 15px rgba(56, 48, 153, 0.15);
+    display: flex;
+    justify-content: center;
+  }
+  .cabecera .bg-icono-perfil .bg-icono-perfil, .cabecera .bg-icono-perfil img {
+    display: block;
+    width: 33px;
+    height: 33px;
+    margin: auto;
+  }
+
+  .general {
+    width: auto;
+    margin: 50px 22px 0 22px;
+    display: grid;
+    grid-template-columns: auto 26px auto;
+  }
+  .general .name-ctnr {
+    font-family: nunitoBold;
+    color: #505050;
+  }
+  .general .container-size3-asignaciones {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 160px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(56, 48, 153, 0.15);
+    margin-bottom: 25px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: auto max-content;
+    grid-template-rows: max-content auto;
+  }
+  .general .container-size3-asignaciones .name-asignaciones {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0 0 12px;
+    width: max-content;
+  }
+  .general .container-size3-asignaciones .container-size3-asignaciones, .general .container-size3-asignaciones img {
+    width: 10px;
+    display: block;
+    margin: 14px 12px 0 auto;
+  }
+  .general .container-size3-asignaciones .tbl-asignaciones {
+    width: auto;
+    font-family: nunitoBold;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin: auto 22px 10px 22px;
+  }
+  .general .container-size3-asignaciones .tbl-asignaciones .list-names {
+    color: #7066CC;
+  }
+  .general .container-size3-asignaciones .tbl-asignaciones .date-asignaciones, .general .container-size3-asignaciones .tbl-asignaciones .state {
+    color: #505050;
+  }
+  .general .container-size3-asignaciones .tbl-asignaciones li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  .general .container-size1-archivos {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(56, 48, 153, 0.15);
+    margin-bottom: 25px;
+    grid-column-start: 1;
+    line-height: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .general .container-size1-archivos .name-archivos {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 12px;
+    width: max-content;
+  }
+  .general .container-size1-archivos .container-size1-archivos, .general .container-size1-archivos img {
+    width: 10px;
+    margin: auto 12px auto auto;
+  }
+  .general .container-size1-personal {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(56, 48, 153, 0.15);
+    margin-bottom: 25px;
+    grid-column-start: 3;
+    line-height: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .general .container-size1-personal .name-personal {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 12px;
+    width: max-content;
+  }
+  .general .container-size1-personal .container-size1-personal, .general .container-size1-personal img {
+    width: 10px;
+    margin: auto 12px auto auto;
+  }
+  .general .container-size1-etime {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(56, 48, 153, 0.15);
+    margin-bottom: 25px;
+    grid-column-start: 1;
+    line-height: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .general .container-size1-etime .name-etime {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 12px;
+    width: max-content;
+  }
+  .general .container-size1-etime .container-size1-etime, .general .container-size1-etime img {
+    width: 10px;
+    margin: auto 12px auto auto;
+  }
+  .general .container-size1-inventario {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(56, 48, 153, 0.15);
+    margin-bottom: 25px;
+    grid-column-start: 3;
+    line-height: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .general .container-size1-inventario .name-inventario {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 12px;
+    width: max-content;
+  }
+  .general .container-size1-inventario .container-size1-inventario, .general .container-size1-inventario img {
+    width: 10px;
+    margin: auto 12px auto auto;
+  }
+  .general .container-size3-programacion {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 160px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(56, 48, 153, 0.15);
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .general .container-size3-programacion .name-programacion {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0 0 12px;
+    width: max-content;
+  }
+  .general .container-size3-programacion .container-size3-programacion, .general .container-size3-programacion img {
+    width: 10px;
+    display: block;
+    margin: 14px 12px 0 auto;
+  }
+  .general .container-size3-programacion .tbl-programacion {
+    width: auto;
+    font-family: nunitoBold;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: auto auto max-content;
+    align-items: center;
+    text-align: center;
+    margin: auto 22px 10px 22px;
+  }
+  .general .container-size3-programacion .tbl-programacion .list-programas {
+    color: #7066CC;
+  }
+  .general .container-size3-programacion .tbl-programacion ul.list-programas {
+    text-align: left;
+  }
+  .general .container-size3-programacion .tbl-programacion ul.list-text {
+    margin: auto 0;
+    text-align: right;
+    color: #707070;
+    margin-right: 5px;
+  }
+  .general .container-size3-programacion .tbl-programacion ul.list-time {
+    color: #7066CC;
+  }
+  .general .container-size3-programacion .tbl-programacion li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  .general .container-size2-estudios {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 160px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(56, 48, 153, 0.15);
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-start: 1;
+  }
+  .general .container-size2-estudios .name-estudios {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0 0 12px;
+    width: max-content;
+  }
+  .general .container-size2-estudios .container-size2-estudios, .general .container-size2-estudios img {
+    width: 10px;
+    display: block;
+    margin: 14px 12px 0 auto;
+  }
+  .general .container-size2-estudios .tbl-estudios {
+    width: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0 12px 8px 12px;
+    font-family: nunitoBold;
+    display: grid;
+    grid-template-columns: max content auto;
+  }
+  .general .container-size2-estudios ul.list-estudios {
+    list-style: none;
+    margin: auto auto;
+  }
+  .general .container-size2-estudios .list-estudios li {
+    margin-bottom: 5px;
+    color: #505050;
+  }
+  .general .container-size2-mensajes {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 160px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(56, 48, 153, 0.15);
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-start: 3;
+  }
+  .general .container-size2-mensajes .name-mensajes {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0 0 12px;
+    width: max-content;
+  }
+  .general .container-size2-mensajes .container-size2-mensajes, .general .container-size2-mensajes img {
+    width: 10px;
+    display: block;
+    margin: 14px 12px 0 auto;
+  }
+  .general .container-size2-mensajes .tbl-mensajes {
+    width: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0 12px 8px 12px;
+    font-family: nunitoBold;
+    display: grid;
+    grid-template-columns: max content auto;
+  }
+  .general .container-size2-mensajes ul.list-mensajes {
+    list-style: none;
+    margin: auto auto;
+  }
+  .general .container-size2-mensajes .list-mensajes li {
+    margin-bottom: 5px;
+    color: #505050;
+  }
+  .general .container-size1-contactos {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(56, 48, 153, 0.15);
+    margin-bottom: 25px;
+    grid-column-start: 1;
+    line-height: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .general .container-size1-contactos .name-contactos {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 12px;
+    width: max-content;
+  }
+  .general .container-size1-contactos .num-contactos {
+    font-family: nunito;
+    font-weight: bold;
+    color: #7066CC;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .general .container-size1-contactos .container-size1-contactos, .general .container-size1-contactos img {
+    width: 10px;
+    margin: auto 12px auto auto;
+  }
+  .general .container-size1-operaciones {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(56, 48, 153, 0.15);
+    margin-bottom: 25px;
+    grid-column-start: 3;
+    line-height: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .general .container-size1-operaciones .name-operaciones {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 12px;
+    width: max-content;
+  }
+  .general .container-size1-operaciones .container-size1-operaciones, .general .container-size1-operaciones img {
+    width: 10px;
+    margin: auto 12px auto auto;
+  }
+}
+
+/*# sourceMappingURL=inicio.css.map */

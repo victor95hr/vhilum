@@ -1,0 +1,516 @@
+
+// VARIABLES
+// Backgrounds
+$bgGeneral: #F5F6FA;
+$bgContainer: #FFFFFF;
+
+// Fuentes
+
+// Fuente general
+$colorFont: #505050;
+// Informacion
+$colorInfo: #7066CC;
+// Funcion
+$colorFunction: #3399FF;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: nunitoBold;
+    src: url(../../../fonts/nunito-bold.ttf);
+}
+@font-face {
+    font-family: nunito;
+    src: url(../../../fonts/nunito.ttf);
+}
+
+
+@media screen  and (max-width: 480px){
+ 
+    // Contenedor central
+    body {
+        background-color: $bgGeneral;
+    }
+
+
+    // Cabecera
+
+    .cabecera {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        // Vhilum
+        .name {
+            font-size: 40px;
+            margin-top: 20px;
+            margin-left: 22px;
+            font-family: nunitoBold;
+            color:$colorFont;
+        }
+
+        // Icono de perfil
+        .bg-icono-perfil {
+            width: 46px;
+            height: 46px;
+            background-color: $bgContainer;
+            border-radius: 100%;
+            margin: 24px 22px 0 auto;
+            box-shadow: 0 3px 15px rgba($color: #383099, $alpha: 0.15);
+            display: flex;
+            justify-content: center;
+            
+            .bg-icono-perfil, img {
+                display: block;
+                width: 33px;
+                height: 33px;
+                margin: auto;
+            }
+
+
+
+        }
+
+    }   
+
+    // Central
+
+    .general {
+        width: auto;
+
+        // Posicionamiento de contenedor general
+        margin: 50px 22px 0 22px;
+        display: grid;
+        grid-template-columns: auto 26px auto;
+
+        // Fuente name-ctnr
+        .name-ctnr {
+            font-family: nunitoBold;
+            color:$colorFont;
+        }
+        // Asignaciones
+        .container-size3-asignaciones {
+            background-color: $bgContainer;
+            width: 100%;
+            height: 160px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba($color: #383099, $alpha: 0.15);
+            margin-bottom: 25px;
+            
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+            display: grid;
+            grid-template-columns: auto max-content;
+            grid-template-rows: max-content auto;
+
+
+            // Name en contenedor
+            .name-asignaciones {
+                font-size: 16px;
+                font-weight: bold;
+                margin: 8px 0 0 12px;
+                width: max-content;
+            }
+            
+            // Icono flecha
+            .container-size3-asignaciones, img {
+                width: 10px;
+                display: block;
+                margin: 14px 12px 0 auto;
+            }
+
+            .tbl-asignaciones {
+
+                width: auto;
+                font-family: nunitoBold;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                // align-items: center;
+                text-align: center;
+                margin: auto 22px 10px 22px;
+                // // border: 1px solid #000;
+
+                // Lista de nombres
+                .list-names {
+                    color: $colorInfo;
+
+                }
+
+                .date-asignaciones, .state {
+                    color: $colorFont;
+                }
+
+                 li {
+                     list-style: none;
+                     margin-bottom: 5px;
+                 }
+            }
+        }
+
+        // Archivos
+        .container-size1-archivos {
+            background-color: $bgContainer;
+            width: 100%;
+            height: 50px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba($color: #383099, $alpha: 0.15);
+            margin-bottom: 25px;
+            grid-column-start: 1;
+            line-height: 50px;
+
+            display: grid;
+            grid-template-columns: auto auto;
+
+            // Name en contenedor
+            .name-archivos {
+                font-size: 16px;
+                font-weight: bold;
+                margin-left: 12px;
+                width: max-content;
+            }
+
+            // Icono flecha
+            .container-size1-archivos, img {
+                width: 10px;
+                margin: auto 12px auto auto;
+            }
+        }
+
+        // Personal
+        .container-size1-personal {
+            background-color: $bgContainer;
+            width: 100%;
+            height: 50px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba($color: #383099, $alpha: 0.15);
+            margin-bottom: 25px;
+            grid-column-start: 3;
+            line-height: 50px;
+
+            display: grid;
+            grid-template-columns: auto auto;
+
+            // Name en contenedor
+            .name-personal {
+                font-size: 16px;
+                font-weight: bold;
+                margin-left: 12px;
+                width: max-content;
+            }
+
+            // Icono flecha
+            .container-size1-personal, img {
+                width: 10px;
+                margin: auto 12px auto auto;
+            }
+        }
+
+        // E-Time
+        .container-size1-etime {
+            background-color: $bgContainer;
+            width: 100%;
+            height: 50px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba($color: #383099, $alpha: 0.15);
+            margin-bottom: 25px;
+            grid-column-start: 1;
+            line-height: 50px;
+
+            display: grid;
+            grid-template-columns: auto auto;
+
+            // Name en contenedor
+            .name-etime {
+                font-size: 16px;
+                font-weight: bold;
+                margin-left: 12px;
+                width: max-content;
+            }
+
+            // Icono flecha
+            .container-size1-etime, img {
+                width: 10px;
+                margin: auto 12px auto auto;
+            }
+        }
+
+        // Inventario
+        .container-size1-inventario {
+            background-color: $bgContainer;
+            width: 100%;
+            height: 50px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba($color: #383099, $alpha: 0.15);
+            margin-bottom: 25px;
+            grid-column-start: 3;
+            line-height: 50px;
+
+            display: grid;
+            grid-template-columns: auto auto;
+
+            // Name en contenedor
+            .name-inventario {
+                font-size: 16px;
+                font-weight: bold;
+                margin-left: 12px;
+                width: max-content;
+            }
+
+            // Icono flecha
+            .container-size1-inventario, img {
+                width: 10px;
+                margin: auto 12px auto auto;
+            }
+        }
+
+        // Programacion
+        .container-size3-programacion {
+            background-color: $bgContainer;
+            width: 100%;
+            height: 160px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba($color: #383099, $alpha: 0.15);
+            margin-bottom: 25px;
+
+            display: grid;
+            grid-template-columns: auto auto;
+            
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+            // Name en contenedor
+            .name-programacion {
+                font-size: 16px;
+                font-weight: bold;
+                margin: 8px 0 0 12px;
+                width: max-content;
+            }
+
+            // Icono flecha
+            .container-size3-programacion, img {
+                width: 10px;
+                display: block;
+                margin: 14px 12px 0 auto;
+            }
+
+            .tbl-programacion {
+
+                width: auto;
+                font-family: nunitoBold;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                display: grid;
+                grid-template-columns: auto auto max-content;
+                align-items: center;
+                text-align: center;
+                margin: auto 22px 10px 22px;
+                // // border: 1px solid #000;
+
+                // Lista de nombres
+                .list-programas {
+                    color: $colorInfo;
+
+                }
+
+                ul.list-programas {
+                    text-align: left;
+                }
+
+                ul.list-text {
+                    margin: auto 0;
+                    text-align: right;
+                    color: #707070;
+                    margin-right: 5px;
+                }
+                ul.list-time {
+                    color: $colorInfo;
+                }
+                 li {
+                     list-style: none;
+                     margin-bottom: 5px;
+                 }
+            }
+        }
+        
+        // Esudios
+        .container-size2-estudios {
+            background-color: $bgContainer;
+            width: 100%;
+            height: 160px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba($color: #383099, $alpha: 0.15);
+            margin-bottom: 25px;
+
+            display: grid;
+            grid-template-columns: auto auto;
+            
+            grid-column-start: 1;
+
+            // Name en contenedor
+            .name-estudios {
+                font-size: 16px;
+                font-weight: bold;
+                margin: 8px 0 0 12px;
+                width: max-content;
+            }
+
+            // Icono flecha
+            .container-size2-estudios, img {
+                width: 10px;
+                display: block;
+                margin: 14px 12px 0 auto;
+            }
+
+            .tbl-estudios {
+                width: auto;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                margin: 0 12px 8px 12px;
+                font-family: nunitoBold;
+
+                display: grid;
+                grid-template-columns: max content auto;
+            }
+
+            ul.list-estudios {
+                list-style: none;
+                margin: auto auto;
+            }
+
+            .list-estudios li {
+                margin-bottom: 5px;
+                color: $colorFont;
+            }
+        }
+
+        // Mensajes
+        .container-size2-mensajes {
+            background-color: $bgContainer;
+            width: 100%;
+            height: 160px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba($color: #383099, $alpha: 0.15);
+            margin-bottom: 25px;
+
+            display: grid;
+            grid-template-columns: auto auto;
+            
+            grid-column-start: 3;
+
+            // Name en contenedor
+            .name-mensajes {
+                font-size: 16px;
+                font-weight: bold;
+                margin: 8px 0 0 12px;
+                width: max-content;
+            }
+
+            // Icono flecha
+            .container-size2-mensajes, img {
+                width: 10px;
+                display: block;
+                margin: 14px 12px 0 auto;
+            }
+
+            .tbl-mensajes {
+                width: auto;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                margin: 0 12px 8px 12px;
+                font-family: nunitoBold;
+
+                display: grid;
+                grid-template-columns: max content auto;
+            }
+
+            ul.list-mensajes {
+                list-style: none;
+                margin: auto auto;
+            }
+
+            .list-mensajes li {
+                margin-bottom: 5px;
+                color: $colorFont;
+            }
+        }
+
+        // Contactos
+        .container-size1-contactos {
+            background-color: $bgContainer;
+            width: 100%;
+            height: 50px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba($color: #383099, $alpha: 0.15);
+            margin-bottom: 25px;
+            grid-column-start: 1;
+            line-height: 50px;
+
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+            // Name en contenedor
+            .name-contactos {
+                font-size: 16px;
+                font-weight: bold;
+                margin-left: 12px;
+                width: max-content;
+            }
+
+            // Numero de contactos
+            .num-contactos {
+                font-family: nunito;
+                font-weight: bold;
+                color: $colorInfo;
+                margin: 0 auto;
+                font-size: 14px;
+
+            }
+            // Icono flecha
+            .container-size1-contactos, img {
+                width: 10px;
+                margin: auto 12px auto auto;
+            }
+        }
+
+        // Operaciones
+        .container-size1-operaciones {
+            background-color: $bgContainer;
+            width: 100%;
+            height: 50px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba($color: #383099, $alpha: 0.15);
+            margin-bottom: 25px;
+            grid-column-start: 3;
+            line-height: 50px;
+            // position: relative;
+
+            display: grid;
+            grid-template-columns: auto auto;
+
+            // Name en contenedor
+            .name-operaciones {
+                font-size: 16px;
+                font-weight: bold;
+                margin-left: 12px;
+                width: max-content;
+            }
+
+            // Icono flecha
+            .container-size1-operaciones, img {
+                width: 10px;
+                // display: block;
+                margin: auto 12px auto auto;
+                // top: 0;
+                // bottom: 0;
+
+            }
+        }
+    }
+
+}
